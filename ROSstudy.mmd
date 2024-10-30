@@ -1,13 +1,13 @@
 # ROS2 structure
 
-::: mermaid
+``` mermaid
 graph LR
     A[Your PC/Ubuntu] <-->|USB/UART| B[STM32 Board]
     A -->|micro-ROS Agent| C[ROS 2 Network]
     B -->|micro-ROS Client| C
-:::
+```
 
-::: mermaid
+``` mermaid
 graph LR
     subgraph STM32[STM32 Board]
         C[micro-ROS Client] -->|Publishes Data| T1((Topic))
@@ -16,9 +16,9 @@ graph LR
         A[micro-ROS Agent] -->|Bridges Communication| N[ROS2 Network]
     end
     STM32 <-->|USB/UART| PC
-:::
+```
 
-::: mermaid
+``` mermaid
 graph LR
     subgraph ROS2 Network
         N1[Node 1] -->|Publishes| T1((Topic A))
@@ -26,4 +26,4 @@ graph LR
         N2 -->|Publishes| T2((Topic B))
         T2 -->|Subscribes| N1
     end
-:::
+```
