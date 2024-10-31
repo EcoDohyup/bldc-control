@@ -1,29 +1,26 @@
 # ROS2 structure
 
-``` mermaid
-graph LR
-    A[Your PC/Ubuntu] <-->|USB/UART| B[STM32 Board]
-    A -->|micro-ROS Agent| C[ROS 2 Network]
-    B -->|micro-ROS Client| C
-```
+
+## ROS2 - micro-ROS 연결 구성도
 
 ``` mermaid
-graph LR
-    subgraph STM32[STM32 Board]
-        C[micro-ROS Client] -->|Publishes Data| T1((Topic))
+graph TD
+    subgraph Ubuntu_ROS2_System
+        ROS2_Node[ROS2 Node]
+        Agent[micro-ROS Agent]
     end
-    subgraph PC[Your Computer]
-        A[micro-ROS Agent] -->|Bridges Communication| N[ROS2 Network]
+    
+    subgraph STM32_System
+        micro_ROS_Client[micro-ROS Client]
+        Sensor[Sensor]
+        Actuator[Actuator]
     end
-    STM32 <-->|USB/UART| PC
-```
 
-``` mermaid
-graph LR
-    subgraph ROS2 Network
-        N1[Node 1] -->|Publishes| T1((Topic A))
-        T1 -->|Subscribes| N2[Node 2]
-        N2 -->|Publishes| T2((Topic B))
-        T2 -->|Subscribes| N1
-    end
+    Sensor -- Sensor Data --> micro_ROS_Client
+    micro_ROS_Client -- Publish Data --> Agent
+    Agent -- Send to ROS2 Node --> ROS2_Node
+    
+    ROS2_Node -- Publish Command --> Agent
+    Agent -- Send Command --> micro_ROS_Client
+    micro_ROS_Client -- Actuate --> Actuator
 ```
