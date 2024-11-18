@@ -3,7 +3,7 @@
 
 
 ## 소스코드 목록
-### 최종 코드 : thread_and_button.ino
+### 최종 코드 : control_final.ino (2024.11.11)
 #### ESP32
 1. **by_button**
     - 버튼 2개로 모터 하나의 속도 제어
