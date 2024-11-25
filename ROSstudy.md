@@ -6,6 +6,9 @@
 
 
 ## about micro-ROS
+### micro-ROS란?
+- ROS2와 임베디드 시스템 사이 통신 구현 "라이브러리"
+- XRCE-DDS 프로토콜 사용
 
 ### ROS2 - micro-ROS 연결 구성도
 
@@ -41,7 +44,10 @@ graph TD
 
 ---
 
-### micro-ROS - Ubuntu 22.04lts setup
+### micro-ROS - Ubuntu 22.04 lts setup
+#### 개발환경
+- Ubuntu 22.04 lts
+- ROS2 Humble
 
 #### 빌드 시스템 및 개발 환경
 1. micro_ros_setup
@@ -251,4 +257,8 @@ Would you like me to:
 ## Know
 
 ## links
-[micro-ROS on FreeRTOS](https://www.freertos.org/Community/Blogs/2020/micro-ros-on-freertos)
+- [micro-ROS on FreeRTOS](https://www.freertos.org/Community/Blogs/2020/micro-ros-on-freertos)
+- [micro-ros와 esp32](https://www.robotstory.co.kr/king/?vid=901)
+- [esp32로 micro-ROS led 예제](https://www.robotstory.co.kr/king/?vid=902)
+- [f767보드와 micro-ROS 개발 환경](https://hexagon-emile.hatenablog.com/entry/2023/11/30/235049)
+- [XRCE-DDS](https://huroint.tistory.com/entry/Micro-ROS-Micro-XRCE-DDS-%ED%8A%B9%EC%A7%95)
