@@ -1,0 +1,31 @@
+[0.008s] Invoking command in '/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/build/micro_ros_espidf': /usr/bin/cmake /home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/micro_ros_espidf_component -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/install/micro_ros_espidf
+[0.010s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.010s]   No project() command is present.  The top-level CMakeLists.txt file must
+[0.010s]   contain a literal, direct call to the project() command.  Add a line of
+[0.010s]   code such as
+[0.010s] 
+[0.010s]     project(ProjectName)
+[0.010s] 
+[0.011s]   near the top of the file, but after cmake_minimum_required().
+[0.011s] 
+[0.011s]   CMake is pretending there is a "project(Project)" command on the first
+[0.011s]   line.
+[0.011s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.011s] [0m
+[0.014s] [31mCMake Error at CMakeLists.txt:14 (idf_component_register):
+[0.014s]   Unknown CMake command "idf_component_register".
+[0.014s] 
+[0.014s] [0m
+[0.014s] [33mCMake Warning (dev) in CMakeLists.txt:
+[0.015s]   No cmake_minimum_required command is present.  A line of code such as
+[0.015s] 
+[0.015s]     cmake_minimum_required(VERSION 3.25)
+[0.015s] 
+[0.015s]   should be added at the top of the file.  The version specified may be lower
+[0.015s]   if you wish to support older CMake versions for this project.  For more
+[0.015s]   information run "cmake --help-policy CMP0000".
+[0.015s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.015s] [0m
+[0.015s] -- Configuring incomplete, errors occurred!
+[0.015s] See also "/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/build/micro_ros_espidf/CMakeFiles/CMakeOutput.log".
+[0.016s] Invoked command in '/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/build/micro_ros_espidf' returned '1': /usr/bin/cmake /home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/micro_ros_espidf_component -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/install/micro_ros_espidf
