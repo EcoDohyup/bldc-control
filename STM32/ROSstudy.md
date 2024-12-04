@@ -196,7 +196,10 @@ void appMain(void * arg)
 ```
 
 #### Flash 이후 확인 작업
-1. ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyACM0 baudrate=115200 -v6
+1. 시리얼통신
+```bash 
+ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyACM0 baudrate=115200 -v6
+```
 2. 
 
 
