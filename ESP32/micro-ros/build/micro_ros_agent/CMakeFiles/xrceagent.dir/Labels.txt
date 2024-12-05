@@ -1,0 +1,13 @@
+# Target labels
+ xrceagent
+# Source files and their labels
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/CMakeFiles/xrceagent
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/CMakeFiles/xrceagent.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/CMakeFiles/xrceagent-complete.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-build.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-configure.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-download.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-install.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-mkdir.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-patch.rule
+/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-stamp/xrceagent-update.rule

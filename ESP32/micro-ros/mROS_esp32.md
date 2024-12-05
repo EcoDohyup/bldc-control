@@ -24,4 +24,9 @@ ros2 run micro_ros_setup create_agent_ws.sh
 ros2 run micro_ros_setup build_agent.sh
 source install/local_setup.bash
 
+# Testing installation
+ros2 run micro_ros_agent micro_ros agent [parameters]
+
 ```
+
+[A boilerplate for mROS for ESP32](https://gist.github.com/rasheeddo/5a6dd95b206233ad58bda8304ae2f30d)

@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/install/micro_ros_setup")
+  set(install_space "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/eco-bdh/work_eco/SW/motors/bldc/bldc-control/ESP32/micro-ros/build/micro_ros_setup/install_manifest.txt")
+set(install_manifest "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_setup/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()

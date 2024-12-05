@@ -1,0 +1,853 @@
+[0.000000] (-) TimerEvent: {}
+[0.000662] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.000740] (micro_ros_msgs) JobQueued: {'identifier': 'micro_ros_msgs', 'dependencies': OrderedDict()}
+[0.000763] (micro_ros_agent) JobQueued: {'identifier': 'micro_ros_agent', 'dependencies': OrderedDict([('micro_ros_msgs', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs')])}
+[0.000785] (micro_ros_msgs) JobStarted: {'identifier': 'micro_ros_msgs'}
+[0.006305] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'cmake'}
+[0.006462] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/src/uros/micro_ros_msgs', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[0.009824] (micro_ros_msgs) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[0.043154] (micro_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.082974] (micro_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.089939] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099819] (-) TimerEvent: {}
+[0.131969] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.137104] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.137290] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.137560] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.139672] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.188587] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.193863] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.194070] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.194390] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.196244] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199882] (-) TimerEvent: {}
+[0.277717] (micro_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.299959] (-) TimerEvent: {}
+[0.337342] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.340625] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.346694] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400057] (-) TimerEvent: {}
+[0.405776] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.459138] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.500156] (-) TimerEvent: {}
+[0.599899] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.600232] (-) TimerEvent: {}
+[0.665510] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.700313] (-) TimerEvent: {}
+[0.743018] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.759377] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[0.760818] (micro_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.780321] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[0.780475] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.780548] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.780605] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[0.795106] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[0.800380] (-) TimerEvent: {}
+[0.819976] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.827318] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.831302] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.836787] (micro_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.862777] (micro_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[0.865108] (micro_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs\n'}
+[0.869781] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[0.870284] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'build'}
+[0.871069] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs', '--', '-j12', '-l12'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[0.887110] (micro_ros_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.891023] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.893505] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_micro_ros_msgs\n'}
+[0.900479] (-) TimerEvent: {}
+[1.000685] (-) TimerEvent: {}
+[1.069150] (micro_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.069529] (micro_ros_msgs) StdoutLine: {'line': b'creating micro_ros_msgs.egg-info\n'}
+[1.069671] (micro_ros_msgs) StdoutLine: {'line': b'writing micro_ros_msgs.egg-info/PKG-INFO\n'}
+[1.069836] (micro_ros_msgs) StdoutLine: {'line': b'writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt\n'}
+[1.069971] (micro_ros_msgs) StdoutLine: {'line': b'writing top-level names to micro_ros_msgs.egg-info/top_level.txt\n'}
+[1.070074] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.071729] (micro_ros_msgs) StdoutLine: {'line': b"reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.072136] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[1.086733] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_micro_ros_msgs_egg\n'}
+[1.100765] (-) TimerEvent: {}
+[1.118332] (micro_ros_msgs) StdoutLine: {'line': b'[  4%] Built target micro_ros_msgs__cpp\n'}
+[1.122435] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.122607] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.122674] (micro_ros_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.137057] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o\x1b[0m\n'}
+[1.137213] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o\x1b[0m\n'}
+[1.137685] (micro_ros_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o\x1b[0m\n'}
+[1.176787] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.197041] (micro_ros_msgs) StdoutLine: {'line': b'[ 19%] Built target micro_ros_msgs__rosidl_generator_c\n'}
+[1.200877] (micro_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.201052] (-) TimerEvent: {}
+[1.201145] (micro_ros_msgs) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.201226] (micro_ros_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.301152] (-) TimerEvent: {}
+[1.311827] (micro_ros_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.312692] (micro_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.312833] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.334757] (micro_ros_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o\x1b[0m\n'}
+[1.334934] (micro_ros_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o\x1b[0m\n'}
+[1.335012] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o\x1b[0m\n'}
+[1.359528] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o\x1b[0m\n'}
+[1.359737] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o\x1b[0m\n'}
+[1.359821] (micro_ros_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o\x1b[0m\n'}
+[1.402806] (-) TimerEvent: {}
+[1.437430] (micro_ros_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[1.469602] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[1.495945] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[1.501375] (micro_ros_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[1.502881] (-) TimerEvent: {}
+[1.508118] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o\x1b[0m\n'}
+[1.537962] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.538226] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[1.572023] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[1.575463] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] Built target micro_ros_msgs__rosidl_typesupport_c\n'}
+[1.580513] (micro_ros_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o\x1b[0m\n'}
+[1.603143] (-) TimerEvent: {}
+[1.607861] (micro_ros_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.612905] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o\x1b[0m\n'}
+[1.628647] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[1.634435] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.661259] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] Built target micro_ros_msgs__rosidl_typesupport_cpp\n'}
+[1.703262] (-) TimerEvent: {}
+[1.803625] (-) TimerEvent: {}
+[1.851710] (micro_ros_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.885399] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.903682] (-) TimerEvent: {}
+[1.905789] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.929226] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[1.937828] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.973097] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[1.981061] (micro_ros_msgs) StdoutLine: {'line': b'[ 76%] Built target micro_ros_msgs\n'}
+[1.989165] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.003754] (-) TimerEvent: {}
+[2.104217] (-) TimerEvent: {}
+[2.204836] (-) TimerEvent: {}
+[2.305295] (-) TimerEvent: {}
+[2.313477] (micro_ros_msgs) StdoutLine: {'line': b'[ 78%] Built target micro_ros_msgs__py\n'}
+[2.321572] (micro_ros_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o\x1b[0m\n'}
+[2.321740] (micro_ros_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o\x1b[0m\n'}
+[2.322016] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o\x1b[0m\n'}
+[2.405402] (-) TimerEvent: {}
+[2.406525] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[2.428238] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] Built target micro_ros_msgs__rosidl_generator_py\n'}
+[2.436090] (micro_ros_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.436239] (micro_ros_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.436323] (micro_ros_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.498792] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.498956] (micro_ros_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.503045] (micro_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.505491] (-) TimerEvent: {}
+[2.515893] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[2.516071] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[2.520865] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.525923] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[2.596966] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'install'}
+[2.600131] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[2.603614] (micro_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.603828] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs\n'}
+[2.603985] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.604104] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.604190] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h\n'}
+[2.604322] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h\n'}
+[2.604431] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h\n'}
+[2.604548] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.604639] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h\n'}
+[2.604758] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h\n'}
+[2.604877] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h\n'}
+[2.605004] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h\n'}
+[2.605128] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c\n'}
+[2.605253] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h\n'}
+[2.605373] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h\n'}
+[2.605501] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c\n'}
+[2.605555] (-) TimerEvent: {}
+[2.605630] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h\n'}
+[2.605745] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h\n'}
+[2.605859] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c\n'}
+[2.605989] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h\n'}
+[2.606114] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[2.606319] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh\n'}
+[2.606467] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv\n'}
+[2.606661] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so\n'}
+[2.606973] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[2.607041] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.607118] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.607164] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[2.607239] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.607306] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h\n'}
+[2.607409] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h\n'}
+[2.607538] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h\n'}
+[2.607694] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[2.607996] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[2.608068] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.608144] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.608202] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.608242] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[2.608311] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[2.608440] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h\n'}
+[2.608570] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h\n'}
+[2.608682] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[2.608807] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h\n'}
+[2.608927] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[2.609079] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.609414] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[2.609494] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so\n'}
+[2.609800] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[2.609861] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.609936] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.609982] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp\n'}
+[2.610063] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp\n'}
+[2.610173] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.610233] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp\n'}
+[2.610351] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp\n'}
+[2.610509] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp\n'}
+[2.610618] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp\n'}
+[2.610744] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp\n'}
+[2.610860] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp\n'}
+[2.610982] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp\n'}
+[2.611106] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp\n'}
+[2.611226] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp\n'}
+[2.611347] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp\n'}
+[2.611489] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.611556] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.611621] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.611690] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.611769] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.611884] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps\n'}
+[2.611982] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[2.612105] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[2.612258] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[2.612770] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[2.612844] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[2.612921] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[2.612970] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[2.613037] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp\n'}
+[2.613104] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp\n'}
+[2.613231] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.613354] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.613488] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[2.613612] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp\n'}
+[2.613776] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.614309] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[2.614373] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[2.614705] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[2.614777] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh\n'}
+[2.614906] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv\n'}
+[2.615039] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info\n'}
+[2.615204] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/PKG-INFO\n'}
+[2.615325] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/top_level.txt\n'}
+[2.615442] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[2.615566] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[2.615705] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs\n'}
+[2.615800] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.615934] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg\n'}
+[2.616027] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity_s.c\n'}
+[2.616152] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py\n'}
+[2.616278] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py\n'}
+[2.616398] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py\n'}
+[2.616533] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py\n'}
+[2.616657] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node_s.c\n'}
+[2.616779] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph_s.c\n'}
+[2.616901] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py\n'}
+[2.617009] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[2.617153] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.617285] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[2.617414] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[2.617551] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[2.617682] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.642591] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs'...\n"}
+[2.642746] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py'...\n"}
+[2.642809] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg'...\n"}
+[2.642862] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py'...\n"}
+[2.642913] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py'...\n"}
+[2.642960] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py'...\n"}
+[2.643030] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py'...\n"}
+[2.645974] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.646286] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.646527] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.646763] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.646954] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.647232] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[2.647338] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[2.647671] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""\n'}
+[2.647781] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl\n'}
+[2.647921] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl\n'}
+[2.648072] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl\n'}
+[2.648212] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg\n'}
+[2.648347] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg\n'}
+[2.648487] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg\n'}
+[2.648681] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs\n'}
+[2.648865] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs\n'}
+[2.649009] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh\n'}
+[2.649146] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[2.649285] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh\n'}
+[2.649421] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv\n'}
+[2.649573] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash\n'}
+[2.649707] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh\n'}
+[2.649847] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh\n'}
+[2.649986] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv\n'}
+[2.650120] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv\n'}
+[2.650304] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs\n'}
+[2.650499] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[2.650654] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.650805] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.650951] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.651102] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.651248] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.651403] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.651555] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.651706] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.651861] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.652014] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.652167] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.652310] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.652467] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.652617] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.652775] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.652929] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.653073] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.653220] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.653355] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.653507] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.653648] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.653791] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.653936] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.654080] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake\n'}
+[2.654203] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake\n'}
+[2.654340] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/package.xml\n'}
+[2.655708] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[2.705642] (-) TimerEvent: {}
+[2.738029] (micro_ros_msgs) JobEnded: {'identifier': 'micro_ros_msgs', 'rc': 0}
+[2.738886] (micro_ros_agent) JobStarted: {'identifier': 'micro_ros_agent'}
+[2.744327] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'cmake'}
+[2.744856] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/src/uros/micro-ROS-Agent/micro_ros_agent', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[2.747079] (micro_ros_agent) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[2.790494] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[2.795497] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.805717] (-) TimerEvent: {}
+[2.838366] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.843523] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.843721] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.843975] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.881618] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.886379] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.905808] (-) TimerEvent: {}
+[2.935870] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.941265] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.941493] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.941816] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.967654] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.970472] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[2.971119] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent\n'}
+[2.973660] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[2.974123] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'build'}
+[2.974361] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent', '--', '-j12', '-l12'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[2.992325] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'xrceagent'\x1b[0m\n"}
+[3.000086] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'xrceagent'\x1b[0m\n"}
+[3.005876] (-) TimerEvent: {}
+[3.007140] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'xrceagent'...\n"}
+[3.105994] (-) TimerEvent: {}
+[3.206263] (-) TimerEvent: {}
+[3.306517] (-) TimerEvent: {}
+[3.406749] (-) TimerEvent: {}
+[3.506977] (-) TimerEvent: {}
+[3.607226] (-) TimerEvent: {}
+[3.707504] (-) TimerEvent: {}
+[3.807771] (-) TimerEvent: {}
+[3.908012] (-) TimerEvent: {}
+[4.008240] (-) TimerEvent: {}
+[4.108501] (-) TimerEvent: {}
+[4.208759] (-) TimerEvent: {}
+[4.309007] (-) TimerEvent: {}
+[4.409438] (-) TimerEvent: {}
+[4.509691] (-) TimerEvent: {}
+[4.609922] (-) TimerEvent: {}
+[4.710153] (-) TimerEvent: {}
+[4.810396] (-) TimerEvent: {}
+[4.910645] (-) TimerEvent: {}
+[4.931039] (micro_ros_agent) StderrLine: {'line': b'HEAD is now at 57d0862 Release v2.4.2\n'}
+[4.962467] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'xrceagent'\x1b[0m\n"}
+[4.973311] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'xrceagent'\x1b[0m\n"}
+[4.980530] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'xrceagent'\x1b[0m\n"}
+[4.983341] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake\n'}
+[5.010730] (-) TimerEvent: {}
+[5.027267] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.032600] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.075193] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.080622] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.080816] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.081070] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.110813] (-) TimerEvent: {}
+[5.118671] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.123599] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.174234] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.179696] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.179923] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.180247] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.184031] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.210900] (-) TimerEvent: {}
+[5.231172] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.231845] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.240172] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.242092] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[5.242702] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[5.250803] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'xrceagent'\x1b[0m\n"}
+[5.266423] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[5.274222] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[5.281387] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[5.288242] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[5.295341] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[5.298637] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[5.302557] (micro_ros_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[5.310960] (-) TimerEvent: {}
+[5.324902] (micro_ros_agent) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[5.325022] (micro_ros_agent) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (tinyxml2)\n'}
+[5.325082] (micro_ros_agent) StderrLine: {'line': b'  does not match the name of the calling package (TinyXML2).  This can lead\n'}
+[5.325133] (micro_ros_agent) StderrLine: {'line': b'  to problems in calling code that expects `find_package` result variables\n'}
+[5.325183] (micro_ros_agent) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[5.325230] (micro_ros_agent) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[5.325278] (micro_ros_agent) StderrLine: {'line': b'  cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)\n'}
+[5.325326] (micro_ros_agent) StderrLine: {'line': b'  /opt/ros/humble/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)\n'}
+[5.325375] (micro_ros_agent) StderrLine: {'line': b'  CMakeLists.txt:153 (find_package)\n'}
+[5.325423] (micro_ros_agent) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[5.325498] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[5.325550] (micro_ros_agent) StdoutLine: {'line': b'-- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  \n'}
+[5.359846] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.366222] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.375292] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[5.376000] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[5.382915] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mPerforming build step for 'uagent'\x1b[0m\n"}
+[5.401054] (micro_ros_agent) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o\x1b[0m\n'}
+[5.401248] (micro_ros_agent) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o\x1b[0m\n'}
+[5.401329] (micro_ros_agent) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o\x1b[0m\n'}
+[5.401401] (micro_ros_agent) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o\x1b[0m\n'}
+[5.401527] (micro_ros_agent) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o\x1b[0m\n'}
+[5.401625] (micro_ros_agent) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o\x1b[0m\n'}
+[5.401742] (micro_ros_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o\x1b[0m\n'}
+[5.401853] (micro_ros_agent) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o\x1b[0m\n'}
+[5.402113] (micro_ros_agent) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o\x1b[0m\n'}
+[5.402179] (micro_ros_agent) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o\x1b[0m\n'}
+[5.402416] (micro_ros_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o\x1b[0m\n'}
+[5.402537] (micro_ros_agent) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o\x1b[0m\n'}
+[5.411082] (-) TimerEvent: {}
+[5.512560] (-) TimerEvent: {}
+[5.615518] (-) TimerEvent: {}
+[5.715878] (-) TimerEvent: {}
+[5.816228] (-) TimerEvent: {}
+[5.916601] (-) TimerEvent: {}
+[6.016976] (-) TimerEvent: {}
+[6.117338] (-) TimerEvent: {}
+[6.217697] (-) TimerEvent: {}
+[6.321518] (-) TimerEvent: {}
+[6.421850] (-) TimerEvent: {}
+[6.522210] (-) TimerEvent: {}
+[6.622583] (-) TimerEvent: {}
+[6.639575] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o\x1b[0m\n'}
+[6.643855] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o\x1b[0m\n'}
+[6.703568] (micro_ros_agent) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o\x1b[0m\n'}
+[6.722699] (-) TimerEvent: {}
+[6.766928] (micro_ros_agent) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o\x1b[0m\n'}
+[6.822810] (-) TimerEvent: {}
+[6.923163] (-) TimerEvent: {}
+[7.023515] (-) TimerEvent: {}
+[7.123879] (-) TimerEvent: {}
+[7.204636] (micro_ros_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o\x1b[0m\n'}
+[7.223991] (-) TimerEvent: {}
+[7.316050] (micro_ros_agent) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o\x1b[0m\n'}
+[7.324101] (-) TimerEvent: {}
+[7.424434] (-) TimerEvent: {}
+[7.525518] (-) TimerEvent: {}
+[7.625973] (-) TimerEvent: {}
+[7.718505] (micro_ros_agent) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o\x1b[0m\n'}
+[7.726082] (-) TimerEvent: {}
+[7.826396] (-) TimerEvent: {}
+[7.927519] (-) TimerEvent: {}
+[8.027859] (-) TimerEvent: {}
+[8.130636] (-) TimerEvent: {}
+[8.231001] (-) TimerEvent: {}
+[8.331372] (-) TimerEvent: {}
+[8.431868] (-) TimerEvent: {}
+[8.532357] (-) TimerEvent: {}
+[8.634512] (-) TimerEvent: {}
+[8.734845] (-) TimerEvent: {}
+[8.837510] (-) TimerEvent: {}
+[8.937835] (-) TimerEvent: {}
+[8.958269] (micro_ros_agent) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o\x1b[0m\n'}
+[9.005192] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o\x1b[0m\n'}
+[9.018568] (micro_ros_agent) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o\x1b[0m\n'}
+[9.037937] (-) TimerEvent: {}
+[9.138272] (-) TimerEvent: {}
+[9.238622] (-) TimerEvent: {}
+[9.260007] (micro_ros_agent) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o\x1b[0m\n'}
+[9.340522] (-) TimerEvent: {}
+[9.440884] (-) TimerEvent: {}
+[9.541210] (-) TimerEvent: {}
+[9.641522] (-) TimerEvent: {}
+[9.677324] (micro_ros_agent) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o\x1b[0m\n'}
+[9.741627] (-) TimerEvent: {}
+[9.842089] (-) TimerEvent: {}
+[9.943528] (-) TimerEvent: {}
+[10.043882] (-) TimerEvent: {}
+[10.144231] (-) TimerEvent: {}
+[10.244583] (-) TimerEvent: {}
+[10.281310] (micro_ros_agent) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o\x1b[0m\n'}
+[10.346517] (-) TimerEvent: {}
+[10.446841] (-) TimerEvent: {}
+[10.469833] (micro_ros_agent) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o\x1b[0m\n'}
+[10.546954] (-) TimerEvent: {}
+[10.642221] (micro_ros_agent) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o\x1b[0m\n'}
+[10.647062] (-) TimerEvent: {}
+[10.708125] (micro_ros_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o\x1b[0m\n'}
+[10.747167] (-) TimerEvent: {}
+[10.847586] (-) TimerEvent: {}
+[10.950525] (-) TimerEvent: {}
+[11.050871] (-) TimerEvent: {}
+[11.068941] (micro_ros_agent) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o\x1b[0m\n'}
+[11.153556] (-) TimerEvent: {}
+[11.189371] (micro_ros_agent) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o\x1b[0m\n'}
+[11.253649] (-) TimerEvent: {}
+[11.353958] (-) TimerEvent: {}
+[11.454290] (-) TimerEvent: {}
+[11.554651] (-) TimerEvent: {}
+[11.654989] (-) TimerEvent: {}
+[11.755317] (-) TimerEvent: {}
+[11.855669] (-) TimerEvent: {}
+[11.956007] (-) TimerEvent: {}
+[12.059660] (-) TimerEvent: {}
+[12.159960] (-) TimerEvent: {}
+[12.260287] (-) TimerEvent: {}
+[12.360631] (-) TimerEvent: {}
+[12.388682] (micro_ros_agent) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o\x1b[0m\n'}
+[12.460736] (-) TimerEvent: {}
+[12.561096] (-) TimerEvent: {}
+[12.661467] (-) TimerEvent: {}
+[12.761801] (-) TimerEvent: {}
+[12.862154] (-) TimerEvent: {}
+[12.962663] (-) TimerEvent: {}
+[13.042950] (micro_ros_agent) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o\x1b[0m\n'}
+[13.062773] (-) TimerEvent: {}
+[13.163182] (-) TimerEvent: {}
+[13.263725] (-) TimerEvent: {}
+[13.364285] (-) TimerEvent: {}
+[13.465520] (-) TimerEvent: {}
+[13.487385] (micro_ros_agent) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o\x1b[0m\n'}
+[13.565626] (-) TimerEvent: {}
+[13.667698] (-) TimerEvent: {}
+[13.768021] (-) TimerEvent: {}
+[13.868344] (-) TimerEvent: {}
+[13.968700] (-) TimerEvent: {}
+[14.007550] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o\x1b[0m\n'}
+[14.028282] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o\x1b[0m\n'}
+[14.068819] (-) TimerEvent: {}
+[14.104760] (micro_ros_agent) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o\x1b[0m\n'}
+[14.168931] (-) TimerEvent: {}
+[14.171535] (micro_ros_agent) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o\x1b[0m\n'}
+[14.269033] (-) TimerEvent: {}
+[14.369342] (-) TimerEvent: {}
+[14.469679] (-) TimerEvent: {}
+[14.569984] (-) TimerEvent: {}
+[14.625861] (micro_ros_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o\x1b[0m\n'}
+[14.670101] (-) TimerEvent: {}
+[14.770424] (-) TimerEvent: {}
+[14.800212] (micro_ros_agent) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o\x1b[0m\n'}
+[14.829562] (micro_ros_agent) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o\x1b[0m\n'}
+[14.870519] (-) TimerEvent: {}
+[14.970856] (-) TimerEvent: {}
+[15.071224] (-) TimerEvent: {}
+[15.077797] (micro_ros_agent) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o\x1b[0m\n'}
+[15.171335] (-) TimerEvent: {}
+[15.272284] (-) TimerEvent: {}
+[15.373213] (-) TimerEvent: {}
+[15.473942] (-) TimerEvent: {}
+[15.575356] (-) TimerEvent: {}
+[15.675890] (-) TimerEvent: {}
+[15.776217] (-) TimerEvent: {}
+[15.876880] (-) TimerEvent: {}
+[15.977175] (-) TimerEvent: {}
+[16.077519] (-) TimerEvent: {}
+[16.177858] (-) TimerEvent: {}
+[16.278179] (-) TimerEvent: {}
+[16.378507] (-) TimerEvent: {}
+[16.478830] (-) TimerEvent: {}
+[16.579140] (-) TimerEvent: {}
+[16.679458] (-) TimerEvent: {}
+[16.779742] (-) TimerEvent: {}
+[16.880025] (-) TimerEvent: {}
+[16.980326] (-) TimerEvent: {}
+[17.080645] (-) TimerEvent: {}
+[17.180956] (-) TimerEvent: {}
+[17.281268] (-) TimerEvent: {}
+[17.381580] (-) TimerEvent: {}
+[17.481861] (-) TimerEvent: {}
+[17.582153] (-) TimerEvent: {}
+[17.682455] (-) TimerEvent: {}
+[17.782747] (-) TimerEvent: {}
+[17.883061] (-) TimerEvent: {}
+[17.983362] (-) TimerEvent: {}
+[18.083653] (-) TimerEvent: {}
+[18.183937] (-) TimerEvent: {}
+[18.284222] (-) TimerEvent: {}
+[18.384496] (-) TimerEvent: {}
+[18.484778] (-) TimerEvent: {}
+[18.585065] (-) TimerEvent: {}
+[18.685357] (-) TimerEvent: {}
+[18.785654] (-) TimerEvent: {}
+[18.885930] (-) TimerEvent: {}
+[18.986206] (-) TimerEvent: {}
+[19.086503] (-) TimerEvent: {}
+[19.186787] (-) TimerEvent: {}
+[19.287077] (-) TimerEvent: {}
+[19.387373] (-) TimerEvent: {}
+[19.487659] (-) TimerEvent: {}
+[19.587927] (-) TimerEvent: {}
+[19.688200] (-) TimerEvent: {}
+[19.788497] (-) TimerEvent: {}
+[19.888779] (-) TimerEvent: {}
+[19.989034] (-) TimerEvent: {}
+[20.032512] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmicroxrcedds_agent.so\x1b[0m\n'}
+[20.089139] (-) TimerEvent: {}
+[20.189417] (-) TimerEvent: {}
+[20.236988] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[20.245215] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'uagent'\x1b[0m\n"}
+[20.252219] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'uagent'\x1b[0m\n"}
+[20.261263] (micro_ros_agent) StdoutLine: {'line': b'Built target uagent\n'}
+[20.269295] (micro_ros_agent) StdoutLine: {'line': b"[ 43%] \x1b[34m\x1b[1mPerforming install step for 'xrceagent'\x1b[0m\n"}
+[20.289498] (-) TimerEvent: {}
+[20.342427] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[20.349254] (micro_ros_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[20.352036] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[20.352177] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2\n'}
+[20.356073] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4\n'}
+[20.356324] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.2" to ""\n'}
+[20.356396] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/libmicroxrcedds_agent.so\n'}
+[20.356493] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent\n'}
+[20.356578] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/publisher\n'}
+[20.356649] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp\n'}
+[20.356762] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types\n'}
+[20.356838] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp\n'}
+[20.356948] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp\n'}
+[20.357055] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp\n'}
+[20.357475] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp\n'}
+[20.357590] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp\n'}
+[20.357698] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/p2p\n'}
+[20.357790] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp\n'}
+[20.357902] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp\n'}
+[20.358007] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/replier\n'}
+[20.358079] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp\n'}
+[20.358188] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/processor\n'}
+[20.358264] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp\n'}
+[20.358373] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/Root.hpp\n'}
+[20.358481] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils\n'}
+[20.358558] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp\n'}
+[20.358694] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp\n'}
+[20.358800] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp\n'}
+[20.358907] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp\n'}
+[20.359010] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp\n'}
+[20.359119] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp\n'}
+[20.359222] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp\n'}
+[20.359325] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp\n'}
+[20.359429] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp\n'}
+[20.359544] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/logger\n'}
+[20.359619] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp\n'}
+[20.359732] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport\n'}
+[20.359808] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp\n'}
+[20.359912] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/can\n'}
+[20.359987] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp\n'}
+[20.360094] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/p2p\n'}
+[20.360169] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp\n'}
+[20.360280] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp\n'}
+[20.360385] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/stream_framing\n'}
+[20.360470] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp\n'}
+[20.360591] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp\n'}
+[20.360702] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint\n'}
+[20.360783] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp\n'}
+[20.360912] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp\n'}
+[20.361024] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp\n'}
+[20.361129] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp\n'}
+[20.361235] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp\n'}
+[20.361342] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp\n'}
+[20.361462] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/util\n'}
+[20.361552] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp\n'}
+[20.361668] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp\n'}
+[20.361778] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp\n'}
+[20.361856] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp\n'}
+[20.361965] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp\n'}
+[20.362072] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp\n'}
+[20.362185] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp\n'}
+[20.362291] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp\n'}
+[20.362407] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp\n'}
+[20.362523] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial\n'}
+[20.362606] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp\n'}
+[20.362715] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h\n'}
+[20.362822] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp\n'}
+[20.362929] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp\n'}
+[20.363036] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp\n'}
+[20.363144] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp\n'}
+[20.363250] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/discovery\n'}
+[20.363328] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp\n'}
+[20.363437] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp\n'}
+[20.363551] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp\n'}
+[20.363653] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/udp\n'}
+[20.363731] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp\n'}
+[20.363839] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp\n'}
+[20.363949] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp\n'}
+[20.364057] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp\n'}
+[20.364162] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/custom\n'}
+[20.364239] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp\n'}
+[20.364351] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp\n'}
+[20.364464] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client\n'}
+[20.364537] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp\n'}
+[20.364643] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session\n'}
+[20.364721] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp\n'}
+[20.364825] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session/stream\n'}
+[20.364905] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp\n'}
+[20.365028] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp\n'}
+[20.365145] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp\n'}
+[20.365261] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/participant\n'}
+[20.365332] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp\n'}
+[20.365434] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware\n'}
+[20.365519] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/ced\n'}
+[20.365597] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp\n'}
+[20.365738] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp\n'}
+[20.365855] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fastdds\n'}
+[20.365930] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp\n'}
+[20.366055] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp\n'}
+[20.366172] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/utils\n'}
+[20.366247] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp\n'}
+[20.366399] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fast\n'}
+[20.366520] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp\n'}
+[20.366640] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp\n'}
+[20.366749] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp\n'}
+[20.366863] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/subscriber\n'}
+[20.366937] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp\n'}
+[20.367042] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/message\n'}
+[20.367116] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp\n'}
+[20.367222] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp\n'}
+[20.367338] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp\n'}
+[20.367451] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/Agent.hpp\n'}
+[20.367579] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/reader\n'}
+[20.367652] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp\n'}
+[20.367763] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/visibility.hpp\n'}
+[20.367865] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/object\n'}
+[20.367941] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp\n'}
+[20.368047] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp\n'}
+[20.368149] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/requester\n'}
+[20.368224] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp\n'}
+[20.368336] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/scheduler\n'}
+[20.368419] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp\n'}
+[20.368525] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp\n'}
+[20.368634] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/topic\n'}
+[20.368711] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp\n'}
+[20.368814] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/datawriter\n'}
+[20.368891] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp\n'}
+[20.368998] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/datareader\n'}
+[20.369071] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp\n'}
+[20.369294] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake\n'}
+[20.369439] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake\n'}
+[20.369586] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/include/uxr/agent/config.hpp\n'}
+[20.369722] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/microxrcedds_agent/LICENSE\n'}
+[20.369857] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake\n'}
+[20.369969] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake\n'}
+[20.376184] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mCompleted 'xrceagent'\x1b[0m\n"}
+[20.385744] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] Built target xrceagent\n'}
+[20.389564] (-) TimerEvent: {}
+[20.393976] (micro_ros_agent) StdoutLine: {'line': b"[ 56%] \x1b[34m\x1b[1mCreating directories for 'micro_ros_agent'\x1b[0m\n"}
+[20.401533] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mNo download step for 'micro_ros_agent'\x1b[0m\n"}
+[20.408731] (micro_ros_agent) StdoutLine: {'line': b"[ 68%] \x1b[34m\x1b[1mNo update step for 'micro_ros_agent'\x1b[0m\n"}
+[20.416185] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo patch step for 'micro_ros_agent'\x1b[0m\n"}
+[20.423045] (micro_ros_agent) StdoutLine: {'line': b"[ 81%] \x1b[34m\x1b[1mPerforming configure step for 'micro_ros_agent'\x1b[0m\n"}
+[20.425930] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake\n'}
+[20.433558] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[20.489663] (-) TimerEvent: {}
+[20.516827] (micro_ros_agent) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[20.589774] (-) TimerEvent: {}
+[20.671152] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[20.675206] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[20.689857] (-) TimerEvent: {}
+[20.730615] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[20.731310] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[20.736043] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_cmake: 3.1.5 (/opt/ros/humble/share/rosidl_cmake/cmake)\n'}
+[20.737500] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[20.755134] (micro_ros_agent) StdoutLine: {'line': b'-- Found fastrtps_cmake_module: 2.2.2 (/opt/ros/humble/share/fastrtps_cmake_module/cmake)\n'}
+[20.757090] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_dds_common: 1.6.0 (/opt/ros/humble/share/rmw_dds_common/cmake)\n'}
+[20.783424] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[20.789941] (-) TimerEvent: {}
+[20.812987] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[20.842133] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[20.854716] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.871607] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_fastrtps_shared_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_shared_cpp/cmake)\n'}
+[20.890022] (-) TimerEvent: {}
+[20.914521] (micro_ros_agent) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[20.915827] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.918055] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[20.918978] (micro_ros_agent) StdoutLine: {'line': b'-- Found micro_ros_msgs: 3.0.1 (/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/share/micro_ros_msgs/cmake)\n'}
+[20.973266] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.980794] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[20.981980] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent\n'}
+[20.990119] (-) TimerEvent: {}
+[20.991937] (micro_ros_agent) StdoutLine: {'line': b"[ 87%] \x1b[34m\x1b[1mPerforming build step for 'micro_ros_agent'\x1b[0m\n"}
+[21.009066] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o\x1b[0m\n'}
+[21.009225] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o\x1b[0m\n'}
+[21.009337] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o\x1b[0m\n'}
+[21.009419] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o\x1b[0m\n'}
+[21.009501] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o\x1b[0m\n'}
+[21.090235] (-) TimerEvent: {}
+[21.190519] (-) TimerEvent: {}
+[21.290774] (-) TimerEvent: {}
+[21.391027] (-) TimerEvent: {}
+[21.491283] (-) TimerEvent: {}
+[21.591543] (-) TimerEvent: {}
+[21.691797] (-) TimerEvent: {}
+[21.792053] (-) TimerEvent: {}
+[21.892308] (-) TimerEvent: {}
+[21.992601] (-) TimerEvent: {}
+[22.092860] (-) TimerEvent: {}
+[22.193128] (-) TimerEvent: {}
+[22.293383] (-) TimerEvent: {}
+[22.393676] (-) TimerEvent: {}
+[22.493925] (-) TimerEvent: {}
+[22.594183] (-) TimerEvent: {}
+[22.694466] (-) TimerEvent: {}
+[22.794715] (-) TimerEvent: {}
+[22.894967] (-) TimerEvent: {}
+[22.995224] (-) TimerEvent: {}
+[23.095504] (-) TimerEvent: {}
+[23.195770] (-) TimerEvent: {}
+[23.296028] (-) TimerEvent: {}
+[23.396533] (-) TimerEvent: {}
+[23.497004] (-) TimerEvent: {}
+[23.586369] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable micro_ros_agent\x1b[0m\n'}
+[23.597074] (-) TimerEvent: {}
+[23.697536] (-) TimerEvent: {}
+[23.798065] (-) TimerEvent: {}
+[23.812020] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target micro_ros_agent\n'}
+[23.819749] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'micro_ros_agent'\x1b[0m\n"}
+[23.827163] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'micro_ros_agent'\x1b[0m\n"}
+[23.836348] (micro_ros_agent) StdoutLine: {'line': b'Built target micro_ros_agent\n'}
+[23.840044] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[23.862078] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'install'}
+[23.862375] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent'], 'cwd': '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'eco-bdh'), ('LC_TIME', 'ko_KR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/eco-bdh/work_eco/tools/cubeMX'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/eco-bdh'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/eco-bdh/.nvm/versions/node/v20.17.0/bin'), ('NVM_INC', '/home/eco-bdh/.nvm/versions/node/v20.17.0/include/node'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2794'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('COLORTERM', 'truecolor'), ('LIBVIRT_DEFAULT_URI', 'qemu:///system'), ('NVM_DIR', '/home/eco-bdh/.nvm'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'eco-bdh'), ('_', '/home/eco-bdh/.local/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'eco-bdh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eco-bdh/.nvm/versions/node/v20.17.0/bin:/home/eco-bdh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/eco-bdh/go/bin'), ('SESSION_MANAGER', 'local/ecobdh-System-Product-Name:@/tmp/.ICE-unix/2794,unix/ecobdh-System-Product-Name:/tmp/.ICE-unix/2794'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/bb0c8ac7_3f3f_42f6_98d3_3d2f165f2d82'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C9VAY2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.187'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('GOPATH', '/home/eco-bdh/go'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/build/micro_ros_agent'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=81912f848d3ee727a2410b146750ed65'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_msgs:/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_setup:/opt/ros/humble')]), 'shell': False}
+[23.865075] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.865247] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent\n'}
+[23.865458] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent\n'}
+[23.865665] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh\n'}
+[23.865787] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv\n'}
+[23.865914] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh\n'}
+[23.866032] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv\n'}
+[23.866154] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash\n'}
+[23.866296] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh\n'}
+[23.866436] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh\n'}
+[23.866578] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv\n'}
+[23.866708] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/package.dsv\n'}
+[23.866886] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent\n'}
+[23.867049] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[23.867174] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake\n'}
+[23.867279] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake\n'}
+[23.867397] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/package.xml\n'}
+[23.867595] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent\n'}
+[23.868794] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""\n'}
+[23.868863] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/launch\n'}
+[23.868921] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/eco-bdh/work_eco/SW/bldc-control/ESP32/micro-ros/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py\n'}
+[23.869938] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[23.898213] (-) TimerEvent: {}
+[23.902054] (micro_ros_agent) JobEnded: {'identifier': 'micro_ros_agent', 'rc': 0}
+[23.902593] (-) EventReactorShutdown: {}
